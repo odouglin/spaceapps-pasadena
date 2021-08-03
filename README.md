@@ -1,12 +1,12 @@
 # Space Apps Pasadena Website
 
-Website for NASA SpaceApps in Pasadena
+Website for NASA Space Apps in Pasadena
 
 ---
 
 ## Steps for collaborators
 
-Note: Assume this you have Node.js and npm installed locally.
+Note: This assumes you have Node.js and npm installed locally.
 
 ### 1) You’ll need the material components installed:
 
