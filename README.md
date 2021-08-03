@@ -1,7 +1,3 @@
-@@ -1,2 +1,44 @@
-
-# spaceapps-pasadena
-
 # Space Apps Pasadena Website
 
 Website for NASA SpaceApps in Pasadena
