@@ -40,11 +40,11 @@ npm install --save-dev webpack webpack-cli webpack-dev-server css-loader sass-lo
 Note: The server needs to continue running in your terminal. <br>
 Run `npm start` and open http://localhost:8080. You should see the website. Refresh page for updates.
 
-### 4) Done testing?
+### 4) Done?
 
 Close the server. <br>
 `ctrl + c` in your terminal.
 
 ### 5) Made something cool?
 
-Run `npm run build` before pull request.
+Run `npm run build` before your commit to git. 
