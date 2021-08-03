@@ -35,10 +35,16 @@ You can install all of them by running this command:
 npm install --save-dev webpack webpack-cli webpack-dev-server css-loader sass-loader sass extract-loader file-loader autoprefixer postcss-loader @babel/core babel-loader @babel/preset-env @material/ripple
 ```
 
-### 3) See the website
+### 3) Working on things? View the HTML in browser
 
-Run `npm start` and open http://localhost:8080. You should see the website.
+Note: The server needs to continue running in your terminal. <br>
+Run `npm start` and open http://localhost:8080. You should see the website. Refresh page for updates.
 
 ### 4) Done testing?
 
-`ctrl + c`
+Close the server. <br>
+`ctrl + c` in your terminal.
+
+### 5) Made something cool?
+
+Run `npm run build` before pull request.

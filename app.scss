@@ -1,10 +1,45 @@
-@use '@material/button/mdc-button';
-@use '@material/button';
+/* Color */
+// To change your theme's color scheme, replace the existing HEX color values
+// with custom HEX color values. Use our color palette generator to help come up
+// with pairings and check your color contrast.
+// https://material.io/design/color/the-color-system.html#tools-for-picking-colors
 
-.foo-button {
-  @include button.container-fill-color(darksalmon);
-}
+// Primary colors ($mdc-theme-primary) map to components such as app bars and
+// buttons, while secondary colors ($mdc-theme-secondary) are used as accents on
+// components such as FABs and selection controls.
 
+// “On-” colors define how text, icons, and strokes are colored in relation to
+// the surface on which they appear. If you are updating these manually, be sure
+// to consider accessible color contrast for the value pairs.
+
+// Theme background ($mdc-theme-background) appears behind scrollable content.
+// Surface color ($mdc-theme-surface) is mapped to the surface of components
+// such as cards, sheets, and menus. Error color ($mdc-theme-error) is used to
+// indicate an error state for components such as text fields provided with
+// inaccurate input.
+
+@use "@material/theme" with (
+  $primary: #fdcfe6,
+  $secondary: #030203,
+  $background: #fff,
+  $on-primary: #000,
+  $on-secondary: #fff,
+  $on-error: #fff,
+  $on-surface: #000,
+  $surface: #fff,
+  $error: #c22b10
+);
+
+/* Components */
+// Top App Bar
+@use "@material/icon-button";
+@use "@material/top-app-bar/mdc-top-app-bar";
+
+@include icon-button.core-styles;
+
+/* Layout */
 body {
-  color: blue;
+  display: flex;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
 }
