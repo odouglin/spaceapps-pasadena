@@ -91,7 +91,7 @@ This can help with pull request.
 <br>
 Creating a pull request: https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request
 
-This can help see examples of how the code works.
+This can help see how material code works via examples.
 <br>
-Material theme Examples: https://material.io/resources/build-a-material-theme 
+Material theme Examples: https://glitch.com/~material-theme-builder
 
