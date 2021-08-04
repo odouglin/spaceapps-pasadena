@@ -16,7 +16,7 @@
   \****************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _material_top_app_bar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material/top-app-bar */ \"./node_modules/@material/top-app-bar/component.js\");\n// Import all components\n //\n// Instantiate all components\n//\n\nvar topAppBarElement = document.querySelector('.mdc-top-app-bar');\nvar topAppBar = new _material_top_app_bar__WEBPACK_IMPORTED_MODULE_0__.MDCTopAppBar(topAppBarElement);\n\n//# sourceURL=webpack://spaceapps-pasadena/./app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _material_top_app_bar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material/top-app-bar */ \"./node_modules/@material/top-app-bar/component.js\");\n/* harmony import */ var _material_ripple__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material/ripple */ \"./node_modules/@material/ripple/component.js\");\n// Import all components\n\n //\n// Instantiate all components\n//\n\nvar topAppBarElement = document.querySelector('.mdc-top-app-bar');\nvar topAppBar = new _material_top_app_bar__WEBPACK_IMPORTED_MODULE_0__.MDCTopAppBar(topAppBarElement);\nvar buttonRipple = new _material_ripple__WEBPACK_IMPORTED_MODULE_1__.MDCRipple(document.querySelector('.mdc-button'));\n\n//# sourceURL=webpack://spaceapps-pasadena/./app.js?");
 
 /***/ }),
 

@@ -47,6 +47,7 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
+        // TODO: Fix options should be query
         options: {
           presets: ['@babel/preset-env'],
         },

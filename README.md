@@ -80,10 +80,10 @@ You should see the website.
 
 ### 6) View Updates:
 
-Change any styling or JavaScript, and want to see updates?
+Change any styling or JavaScript, and want to view updates?
 <br>
 <br>
-See updates in your browser by opening a new terminal tab (command/ctrl t).
+View updates in your browser by opening a new terminal tab (command/ctrl t).
 <br>
 Make sure you're in the spaceapps-pasadena folder, then run `npm run build`.
 <br>
@@ -107,8 +107,8 @@ Run `npm run build` before commit to git.
 
 ## Resources:
 
-This can help with pull request. <a href="https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request" target="_blank">Creating a pull request</a>
+Help with <a href="https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request" target="_blank">creating a pull request.</a>
 
-This is the list of material web components. <a href="https://material.io/components?platform=web" target="_blank">Material Components</a>
+List of <a href="https://material.io/components?platform=web" target="_blank">Material Web Components</a>
 
-This can help you see how material code works via examples. <a href="https://glitch.com/~material-theme-builder" target="_blank">Material theme Examples</a>
+See how material code works with <a href="https://glitch.com/~material-theme-builder" target="_blank">Material theme examples.</a>
