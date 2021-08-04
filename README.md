@@ -82,6 +82,7 @@ Run `npm run build` before commit to git.
 ## Resources:
 This can help with pull request. <a href="https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request" target="_blank">Creating a pull request</a>
 
+This is the list of material web components. <a href="https://material.io/components?platform=web" target="_blank">Material Components</a>
 
 This can help you see how material code works via examples. <a href="https://glitch.com/~material-theme-builder" target="_blank">Material theme Examples</a>
 
