@@ -1,4 +1,5 @@
-/* Color */
+/* All Material Styles */
+
 // To change your theme's color scheme, replace the existing HEX color values
 // with custom HEX color values. Use our color palette generator to help come up
 // with pairings and check your color contrast.
@@ -18,28 +19,122 @@
 // indicate an error state for components such as text fields provided with
 // inaccurate input.
 
+// Color
 @use "@material/theme" with (
-  $primary: #fdcfe6,
-  $secondary: #030203,
-  $background: #fff,
+  $primary: #dfdfdf,
+  $secondary: #000,
   $on-primary: #000,
   $on-secondary: #fff,
   $on-error: #fff,
   $on-surface: #000,
+  $background: #fff,
   $surface: #fff,
   $error: #c22b10
 );
 
-/* Components */
-// Top App Bar
+// Use all components
+@use "@material/button/mdc-button";
+@use "@material/theme/custom-properties";
+@use "@material/layout-grid/mdc-layout-grid";
+@use "@material/typography/mdc-typography";
+@use "@material/button/styles";
 @use "@material/icon-button";
+@use "@material/button";
 @use "@material/top-app-bar/mdc-top-app-bar";
 
+// Include all components
 @include icon-button.core-styles;
-
-/* Layout */
-body {
-  display: flex;
-  margin: 0;
-  font-family: 'Nunito', sans-serif;
+.foo {
+  @include theme.property(color, custom-properties.create(--foo-color, red));
 }
+
+.accessible-button {
+  @include button.filled-accessible(gray);
+}
+
+// grid
+:root {
+  --mdc-layout-grid-margin-desktop-hd: 32px;
+  --mdc-layout-grid-gutter-desktop-hd: 32px;
+  --mdc-layout-grid-column-width-desktop-hd: 69px;
+  --mdc-layout-grid-margin-desktop: 32px;
+  --mdc-layout-grid-gutter-desktop: 32px;
+  --mdc-layout-grid-column-width-desktop: 51px;
+  --mdc-layout-grid-margin-tablet: 32px;
+  --mdc-layout-grid-gutter-tablet: 32px;
+  --mdc-layout-grid-column-width-tablet: 64px;
+  --mdc-layout-grid-margin-phone: 16px;
+  --mdc-layout-grid-gutter-phone: 16px;
+  --mdc-layout-grid-column-width-phone: 115px;
+}
+
+* {
+  // Toggle Comment border stye & color (on/off) to see layout border.
+  // border-style: solid;
+  // border-color: #c22b10;
+
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+}
+
+body,
+html {
+  height: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+a:hover,
+a button:hover {
+  color: darkgrey;
+}
+
+.about-space-apps-pasadena-text {
+  padding-bottom: 100px;
+}
+
+.about-local-lead-section {
+  background-color: #ebebeb;
+}
+
+.footer {
+  background-color: #dfdfdf;
+}
+
+.footer-item {
+  color: #000;
+  margin-bottom: 1rem;
+  margin-right: 2.5rem;
+  font-size: 0.875em;
+  font-family: 'Roboto';
+  font-weight: normal;
+}
+
+// TODO: Add Images
+// .hero-image .hero-image-container {
+//   background-image: (hero-image-768.jpg);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   height: 100%;
+//   width: 100%;
+
+//   @media only screen and (min-width: 1100px) {
+//     background-image: (hero-image-1400.jpg);
+//   }
+
+//   @media only screen and (min-width: 768px) {
+//     background-image: (hero-image-1100.jpg);
+//   }
+// }
+
+// .about-local-lead-image {
+// }
