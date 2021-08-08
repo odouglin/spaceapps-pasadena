@@ -41,6 +41,7 @@
 @use "@material/icon-button";
 @use "@material/button";
 @use "@material/top-app-bar/mdc-top-app-bar";
+@use "@material/banner";
 
 // Include all components
 @include icon-button.core-styles;
@@ -97,6 +98,31 @@ a:hover,
 a button:hover {
   color: darkgrey;
 }
+
+.mdc-banner {
+  height: 50px;
+  width: 30%;
+  margin: auto;
+  
+}
+
+.mdc-banner__text {
+  font-size: 20px;
+  margin-top: 15px;
+  float: left;
+  color: black;
+}
+
+.mdc-banner button {
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 10px;
+  background-color: black;
+  float: right;
+  font-size: 20px;
+}
+
+
 
 .about-space-apps-pasadena-text {
   padding-bottom: 100px;
