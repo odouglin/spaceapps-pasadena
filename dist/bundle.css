@@ -2271,25 +2271,33 @@ a button:hover {
 }
 
 .mdc-banner {
-  height: 50px;
-  width: 30%;
-  margin: auto;
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  grid-template-rows: 50px;
+  background-color: darkblue;
+  height: 75px;
+  width: 100%;
 }
 
 .mdc-banner__text {
   font-size: 20px;
-  margin-top: 15px;
+  margin-top: 20px;
+  margin-left: 40%;
   float: left;
-  color: black;
+  color: #FAF9F6;
 }
 
-.mdc-banner button {
+.mdc-banner__actions a {
   position: absolute;
-  margin-top: 5px;
-  margin-left: 10px;
-  background-color: black;
-  float: right;
+  margin-top: 20px;
+  margin-left: 15px;
   font-size: 20px;
+  color: #f5f4f2;
+  float: right;
+  text-decoration: underline;
+  -webkit-text-decoration-color: lightgray;
+          text-decoration-color: lightgray;
+  text-underline-offset: 1px;
 }
 
 .about-space-apps-pasadena-text {
