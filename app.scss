@@ -1,56 +1,35 @@
-/* All Material Styles */
-
-// To change your theme's color scheme, replace the existing HEX color values
-// with custom HEX color values. Use our color palette generator to help come up
-// with pairings and check your color contrast.
-// https://material.io/design/color/the-color-system.html#tools-for-picking-colors
-
-// Primary colors ($mdc-theme-primary) map to components such as app bars and
-// buttons, while secondary colors ($mdc-theme-secondary) are used as accents on
-// components such as FABs and selection controls.
-
-// “On-” colors define how text, icons, and strokes are colored in relation to
-// the surface on which they appear. If you are updating these manually, be sure
-// to consider accessible color contrast for the value pairs.
-
-// Theme background ($mdc-theme-background) appears behind scrollable content.
-// Surface color ($mdc-theme-surface) is mapped to the surface of components
-// such as cards, sheets, and menus. Error color ($mdc-theme-error) is used to
-// indicate an error state for components such as text fields provided with
-// inaccurate input.
-
+/* All Use components */
 // Color
 @use "@material/theme" with (
-  $primary: #dfdfdf,
-  $secondary: #000,
-  $on-primary: #000,
-  $on-secondary: #fff,
+  $primary: #09103C,
+  $secondary: #ee2c3e,
+  $on-primary: #fff,
+  $on-secondary: #000,
   $on-error: #fff,
   $on-surface: #000,
   $background: #fff,
   $surface: #fff,
   $error: #c22b10
 );
-
-// Use all components
-@use "@material/button/mdc-button";
-@use "@material/theme/custom-properties";
-@use "@material/layout-grid/mdc-layout-grid";
-@use "@material/typography/mdc-typography";
+// button
 @use "@material/button/styles";
-@use "@material/icon-button";
+// customize button
 @use "@material/button";
+// top app bar
+@use "@material/icon-button";
 @use "@material/top-app-bar/mdc-top-app-bar";
+// grid
+@use "@material/layout-grid/mdc-layout-grid";
+// typography
+@use "@material/typography/mdc-typography";
+// customize banner
+@use "@material/banner";
 
-// Include all components
+/* All include components */
+// top app bar
 @include icon-button.core-styles;
-.foo {
-  @include theme.property(color, custom-properties.create(--foo-color, red));
-}
 
-.accessible-button {
-  @include button.filled-accessible(gray);
-}
+/* CSS */
 
 // grid
 :root {
@@ -72,6 +51,7 @@
   // Toggle Comment border stye & color (on/off) to see layout border.
   // border-style: solid;
   // border-color: #c22b10;
+  text-decoration: none;
 
   box-sizing: border-box;
 }
@@ -89,25 +69,48 @@ html {
   padding: 0;
 }
 
-a {
-  text-decoration-line: none;
+.brand {
+  display: flex;
+  align-items: center;
+  height: 72px;
+  margin-right: auto;
+  padding-left: 24px;
+  -webkit-font-smoothing: auto;
 }
 
-a:hover,
-a button:hover {
-  color: darkgrey;
+.brand-title {
+  display: none;
+}
+
+.brand-logo {
+  display: block;
+  width: 232.91px;
+  height: 93.33px;
+  margin-right: 16px;
+}
+
+.landing-page-hero-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.accessible-button {
+  @include button.filled-accessible(#09103c);
 }
 
 .about-space-apps-pasadena-text {
   padding-bottom: 100px;
 }
 
-.about-local-lead-section {
-  background-color: #ebebeb;
+.about-text-red {
+  color: #ee2c3e;
 }
 
 .footer {
-  background-color: #dfdfdf;
+  background-color: #000;
+  color: #fff;
 }
 
 .footer-item {
@@ -115,26 +118,4 @@ a button:hover {
   margin-bottom: 1rem;
   margin-right: 2.5rem;
   font-size: 0.875em;
-  font-family: 'Roboto';
-  font-weight: normal;
 }
-
-// TODO: Add Images
-// .hero-image .hero-image-container {
-//   background-image: (hero-image-768.jpg);
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   height: 100%;
-//   width: 100%;
-
-//   @media only screen and (min-width: 1100px) {
-//     background-image: (hero-image-1400.jpg);
-//   }
-
-//   @media only screen and (min-width: 768px) {
-//     background-image: (hero-image-1100.jpg);
-//   }
-// }
-
-// .about-local-lead-image {
-// }
