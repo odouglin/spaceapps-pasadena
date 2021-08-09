@@ -23,7 +23,7 @@
 // typography
 @use "@material/typography/mdc-typography";
 // customize banner
-@use "@material/banner";
+
 
 /* All include components */
 // top app bar
@@ -99,6 +99,31 @@ html {
 .accessible-button {
   @include button.filled-accessible(#09103c);
 }
+
+.mdc-banner {
+  height: 50px;
+  width: 30%;
+  margin: auto;
+  
+}
+
+.mdc-banner__text {
+  font-size: 20px;
+  margin-top: 15px;
+  float: left;
+  color: black;
+}
+
+.mdc-banner button {
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 10px;
+  background-color: black;
+  float: right;
+  font-size: 20px;
+}
+
+
 
 .about-space-apps-pasadena-text {
   padding-bottom: 100px;
