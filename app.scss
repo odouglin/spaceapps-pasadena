@@ -103,7 +103,9 @@ a button:hover {
   display: grid;
   grid-template-columns: 4fr 2fr;
   grid-template-rows: 50px;
-  background-color: darkblue;
+  background-color: #07103f;
+  border-bottom: 1px solid #fff;
+  position: fixed;
   height: 75px;
   width: 100%; 
 }
