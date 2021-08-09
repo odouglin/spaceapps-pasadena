@@ -69,97 +69,99 @@
     >
       <!-- Banner -->
       <!-- TODO: Add banner SCSS & HTML -->
-      <section class="landing-page-section banner"></section>
-
-      <!-- Hero -->
-      <!-- TODO: Reduce size of hero -->
-      <!-- TODO: Improve hero image resolution -->
-      <section class="landing-page-section hero">
-        <div class="hero-image">
-          <picture>
-            <source
-              media="(min-width: 1100px)"
-              srcset="
-                ./media/space-apps-pasadena-2021-hero-image-1400.jpg,
-                ./media/space-apps-pasadena-2021-hero-image-1400-2x.jpg 2x
-              "
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="
-                ./media/space-apps-pasadena-2021-hero-image-1100.jpg,
-                ./media/space-apps-pasadena-2021-hero-image-1100-2x.jpg 2x
-              "
-            />
-            <img
-              class="landing-page-hero-image"
-              src="./media/space-apps-pasadena-2021-hero-image-768.jpg"
-              srcset="./media/space-apps-pasadena-2021-hero-image-768-2x.jpg 2x"
-              alt="Astronaut on the moon with the Space Apps Pasadena logo"
-            />
-          </picture>
-        </div>
+      <section class="landing-page-section banner">
+        <span class="mdc-typography--body2">
+          Temp Text <a href="#">Temp link</a>
+        </span>
       </section>
 
-      <!-- About Space Apps Pasadena -->
-      <!-- TODO: Fix responsive rext and Add margin -->
-      <section class="landing-page-section">
-        <div class="mdc-layout-grid">
-          <div class="mdc-layout-grid__inner">
-            <div
-              class="
-                mdc-layout-grid__cell
-                mdc-layout-grid__cell--span-4-phone
-                mdc-layout-grid__cell--span-8-tablet
-                mdc-layout-grid__cell--span-6-desktop
-                mdc-layout-grid__cell--span-6-desktop-hd
-                mdc-layout-grid__cell--align-right
-              "
-            >
-              <div class="about-text">
-                <h1 class="mdc-typography--headline1">
-                  The world needs your ideas!
-                </h1>
-                <h4 class="mdc-typography--headline4">
-                  Create teams and use NASA Data to find solutions to Space &
-                  Earth’s most pressing challenges at Space Apps Pasadena!
-                </h4>
-                <h4 class="mdc-typography--headline4">
-                  <span class="about-text-red"> Oct 2-3, @NASA </span>is calling
-                  people from around the globe to join the 10th annual
-                  International
-                  <span class="about-text-red">#SpaceApps Challenge.</span>
-                </h4>
-                <a href="#FAQS">
-                  <button
-                    class="
-                      mdc-button mdc-button--raised
-                      accessible-button
-                      landing-page-register-button
-                    "
-                  >
-                    <span class="mdc-button__label">Learn More</span>
-                  </button>
-                </a>
-                <a
-                  href="https://2021.spaceappschallenge.org/locations/pasadena-ca/"
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-container">
+          <div>
+            <div class="mdc-layout-grid landing-page-section">
+              <div class="mdc-layout-grid__inner">
+                <div
+                  class="
+                    mdc-layout-grid__cell
+                    mdc-layout-grid__cell--span-4-phone
+                    mdc-layout-grid__cell--span-8-tablet
+                    mdc-layout-grid__cell--span-6-desktop
+                    mdc-layout-grid__cell--span-6-desktop-hd
+                    mdc-layout-grid__cell--align-right
+                  "
                 >
-                  <button
-                    class="
-                      mdc-button mdc-button--raised
-                      accessible-button
-                      landing-page-register-button
-                    "
-                  >
-                    <span class="mdc-button__label">Register</span>
-                  </button>
-                </a>
+                  <div class="about-text">
+                    <h1 class="mdc-typography--headline3">
+                      Hackathon: Space Apps Pasadena registration is open
+                    </h1>
+                    <h2 class="mdc-typography--body1">
+                      Create teams and use NASA Data to find solutions to Space
+                      & Earth’s most pressing challenges at Space Apps Pasadena!
+                      Oct 2-3, @NASA is calling people from around the globe to
+                      join the 10th annual International #SpaceApps Challenge.
+                    </h2>
+
+                    <!-- TODO: Style button -->
+                    <a
+                      href="https://2021.spaceappschallenge.org/locations/pasadena-ca/"
+                    >
+                      <button
+                        class="
+                          mdc-button mdc-button--raised
+                          accessible-button
+                          landing-page-register-button
+                        "
+                      >
+                        <span class="mdc-button__label">Register now</span>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="
+                    mdc-layout-grid__cell
+                    mdc-layout-grid__cell--span-4-phone
+                    mdc-layout-grid__cell--span-8-tablet
+                    mdc-layout-grid__cell--span-6-desktop
+                    mdc-layout-grid__cell--span-6-desktop-hd
+                    mdc-layout-grid__cell--align-right
+                  "
+                >
+                  <div>
+                    <picture>
+                      <!-- <source
+                        media="(min-width: 1100px)"
+                        srcset="
+                          ./media/space-apps-pasadena-2021-hero-image-1400.jpg,
+                          ./media/space-apps-pasadena-2021-hero-image-1400-2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./media/space-apps-pasadena-2021-hero-image-1100.jpg,
+                          ./media/space-apps-pasadena-2021-hero-image-1100-2x.jpg 2x
+                        "
+                      /> -->
+                      <img
+                        class="hero-image"
+                        src="./media/"
+                        srcset="
+                          ./media/space-apps-pasadena-2021-hero-image-1400-2x.png
+                        "
+                        alt=""
+                      />
+                    </picture>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- TODO: Fix responsive text -->
       <!-- Footer -->
       <!-- Add footer elements -->
       <section class="landing-page-section footer">
