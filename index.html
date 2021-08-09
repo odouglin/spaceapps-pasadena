@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NASA Space Apps Pasadena Website</title>
+    <title>NASA Space Apps Pasadena 2021 Website</title>
 
     <!-- Font -->
     <link
@@ -23,6 +23,7 @@
   </head>
 
   <body class="mdc-typography">
+    <!-- TODO: Add tabs -->
     <header
       class="mdc-top-app-bar mdc-top-app-bar--prominent mdc-top-app-bar--fixed"
     >
@@ -40,135 +41,69 @@
           >
             menu
           </button>
-          <span class="mdc-top-app-bar__title">Page title</span>
+          <a
+            class="brand"
+            aria-label="Navigate to the NASA space apps pasadena 2021 homepage."
+            href="/"
+            ><span
+              class="brand-logo"
+              style="
+                background: url('./media/NASA-space-apps-logo-white.png') 100%
+                  50% / auto 100% no-repeat;
+              "
+            ></span>
+            <span class="mdc-top-app-bar__title brand-title"
+              >NASA Space Apps Pasadena 2021</span
+            >
+          </a>
         </section>
         <section
           class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end"
           role="toolbar"
-        >
-          <button
-            class="material-icons mdc-top-app-bar__action-item mdc-icon-button"
-            aria-label="Favorite"
-          >
-            favorite
-          </button>
-          <button
-            class="material-icons mdc-top-app-bar__action-item mdc-icon-button"
-            aria-label="Search"
-          >
-            search
-          </button>
-          <button
-            class="material-icons mdc-top-app-bar__action-item mdc-icon-button"
-            aria-label="Options"
-          >
-            more_vert
-          </button>
-        </section>
+        ></section>
       </div>
     </header>
 
     <main
       class="mdc-top-app-bar--prominent-fixed-adjust mdc-top-app-bar--fixed"
     >
-
       <!-- Banner -->
-      <div class="mdc-banner" role="banner">
-        <div class="mdc-banner__content"
-             role="alertdialog"
-             aria-live="assertive">
-          <div class="mdc-banner__graphic-text-wrapper">
-            <div class="mdc-banner__text">
-              Stay up to date with our Discord channel
-            </div>
-          </div>
-          <div class="mdc-banner__actions">
-            <a href="https://discord.gg/XTwnNFyNZv" target="_blank"><button type="button" class="mdc-button mdc-banner__primary-action">
-              <div class="mdc-button__ripple"></div>
-              <div class="mdc-button__label">Join Us</div>
-            </button></a>
-          </div>
-        </div>
-      </div>
-      
+      <!-- TODO: Add banner SCSS & HTML -->
+      <section class="landing-page-section banner"></section>
+
       <!-- Hero -->
-      <section class="welcome-page-section hero">
-        <div class="hero-image hero-image-container"></div>
+      <!-- TODO: Reduce size of hero -->
+      <!-- TODO: Improve hero image resolution -->
+      <section class="landing-page-section hero">
+        <div class="hero-image">
+          <picture>
+            <source
+              media="(min-width: 1100px)"
+              srcset="
+                ./media/space-apps-pasadena-2021-hero-image-1400.jpg,
+                ./media/space-apps-pasadena-2021-hero-image-1400-2x.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./media/space-apps-pasadena-2021-hero-image-1100.jpg,
+                ./media/space-apps-pasadena-2021-hero-image-1100-2x.jpg 2x
+              "
+            />
+            <img
+              class="landing-page-hero-image"
+              src="./media/space-apps-pasadena-2021-hero-image-768.jpg"
+              srcset="./media/space-apps-pasadena-2021-hero-image-768-2x.jpg 2x"
+              alt="Astronaut on the moon with the Space Apps Pasadena logo"
+            />
+          </picture>
+        </div>
       </section>
 
       <!-- About Space Apps Pasadena -->
-      <section class="welcome-page-section">
-        <div class="mdc-layout-grid">
-          <div class="mdc-layout-grid__inner">
-            <div
-              class="
-                mdc-layout-grid__cell
-                mdc-layout-grid__cell--span-4-phone
-                mdc-layout-grid__cell--span-8-tablet
-                mdc-layout-grid__cell--span-6-desktop
-                mdc-layout-grid__cell--span-6-desktop-hd
-                mdc-layout-grid__cell--align-middle
-              "
-            >
-              <div class="about-space-apps-pasadena-text">
-                <h1 class="mdc-typography--headline1">
-                  The world needs your ideas!
-                </h1>
-                <h4 class="mdc-typography--headline4">
-                  Create teams and use NASA Data to find solutions to Space &
-                  Earth’s most pressing challenges at Space Apps Pasadena!
-                </h4>
-                <h4 class="mdc-typography--headline4">
-                  Oct 2-3, @NASA is calling people from around the globe to join
-                  the 10th annual International #SpaceApps Challenge.
-                </h4>
-                <a href="">
-                  <button
-                    class="mdc-button mdc-button--raised accessible-button"
-                  >
-                    <span class="mdc-button__label">Register</span>
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- About Local Lead She.Codes -->
-      <section class="welcome-page-section about-local-lead-section">
-        <!-- Local Lead Text -->
-        <div class="mdc-layout-grid">
-          <div class="mdc-layout-grid__inner">
-            <div
-              class="
-                mdc-layout-grid__cell
-                mdc-layout-grid__cell--span-4-phone
-                mdc-layout-grid__cell--span-8-tablet
-                mdc-layout-grid__cell--span-6-desktop
-                mdc-layout-grid__cell--span-6-desktop-hd
-                mdc-layout-grid__cell--align-middle
-              "
-            >
-              <div>
-                <h2 class="about-local-lead-text mdc-typography--headline2">
-                  Meet your local lead
-                </h2>
-                <h5 class="mdc-typography--headline5">
-                  Hi, we’re She.Codes PCC, a Computer Science club at Pasadena
-                  City College. We welcome all genders as we do our part to
-                  increase women in tech. We’ll be your Space Apps Pasadena
-                  lead.
-                  <br /><br />
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Autem illum ratione, harum vel nulla id odio eveniet
-                  blanditiis totam ducimus ab est esse, placeat dolor.
-                </h5>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Local Lead Image -->
+      <!-- TODO: Fix responsive rext and Add margin -->
+      <section class="landing-page-section">
         <div class="mdc-layout-grid">
           <div class="mdc-layout-grid__inner">
             <div
@@ -181,24 +116,44 @@
                 mdc-layout-grid__cell--align-right
               "
             >
-              <div class="about-local-lead-image">
-                <!-- TODO: add image -->
-                <!-- <img
-                  src="/about-local-lead-550.jpg"
-                  srcset="
-                    /about-local-lead-550.jpg  550w,
-                    /about-local-lead-768.jpg  768w,
-                    about-local-lead-1092.jpg 1092w
-                  "
-                  alt="about-local-lead-image"
-                  class="about-local-lead-image"
-                /> -->
-              </div>
-              <div class="about-local-lead-image-caption">
-                <p class="caption">
-                  Katja Liebing/Courier - Students listen to guest speakers at
-                  the She.Codes PCC computer science conference
-                </p>
+              <div class="about-text">
+                <h1 class="mdc-typography--headline1">
+                  The world needs your ideas!
+                </h1>
+                <h4 class="mdc-typography--headline4">
+                  Create teams and use NASA Data to find solutions to Space &
+                  Earth’s most pressing challenges at Space Apps Pasadena!
+                </h4>
+                <h4 class="mdc-typography--headline4">
+                  <span class="about-text-red"> Oct 2-3, @NASA </span>is calling
+                  people from around the globe to join the 10th annual
+                  International
+                  <span class="about-text-red">#SpaceApps Challenge.</span>
+                </h4>
+                <a href="#FAQS">
+                  <button
+                    class="
+                      mdc-button mdc-button--raised
+                      accessible-button
+                      landing-page-register-button
+                    "
+                  >
+                    <span class="mdc-button__label">Learn More</span>
+                  </button>
+                </a>
+                <a
+                  href="https://2021.spaceappschallenge.org/locations/pasadena-ca/"
+                >
+                  <button
+                    class="
+                      mdc-button mdc-button--raised
+                      accessible-button
+                      landing-page-register-button
+                    "
+                  >
+                    <span class="mdc-button__label">Register</span>
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -206,7 +161,8 @@
       </section>
 
       <!-- Footer -->
-      <section class="welcome-page-section footer">
+      <!-- Add footer elements -->
+      <section class="landing-page-section footer">
         <div class="mdc-layout-grid">
           <div class="footer-items">
             <div class="footer-item footer-item-logo-2021"></div>
