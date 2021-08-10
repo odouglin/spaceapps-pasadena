@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Meta Description for SEO -->
+    <meta name="description" content="Website for NASA Space Apps Pasadena">
     <title>NASA Space Apps Pasadena 2021 Website</title>
+
 
     <!-- Font -->
     <link
@@ -68,14 +71,25 @@
       class="mdc-top-app-bar--prominent-fixed-adjust mdc-top-app-bar--fixed"
     >
       <!-- Banner -->
-      <!-- TODO: Add banner SCSS & HTML -->
-      <section class="landing-page-section banner">
-        <span class="mdc-typography--body2">
-          Temp Text <a href="#">Temp link</a>
-        </span>
-      </section>
+      <div class="mdc-banner" role="banner">
+        <div class="mdc-banner__content"
+             role="alertdialog"
+             aria-live="assertive">
+          <div class="mdc-banner__graphic-text-wrapper">
+            <div class="mdc-banner__text">
+              Hop onto our Discord(chat platform) to ask questions, find a team, and more!
+            </div>
+          </div>
+          <div class="mdc-banner__actions">
+            <a href="https://discord.gg/XTwnNFyNZv" target="_blank">
+              <div class="mdc-button__ripple"></div>
+              <div class="mdc-button__label">Join Our Discord</div>
+            </a>
+          </div>
+        </div>
+      </div>
 
-      <!-- Hero -->
+     <!-- Hero -->
       <section class="hero">
         <div class="hero-container">
           <div>
@@ -101,6 +115,7 @@
                       Oct 2-3, @NASA is calling people from around the globe to
                       join the 10th annual International #SpaceApps Challenge.
                     </h2>
+                    
 
                     <!-- TODO: Style button -->
                     <a
@@ -168,7 +183,7 @@
         <div class="mdc-layout-grid">
           <div class="footer-items">
             <div class="footer-item footer-item-logo-2021"></div>
-            <a class="footer-item discord" href="#">Discord</a>
+            <a class="footer-item discord" href="https://discord.gg/XTwnNFyNZv" target="_blank">Discord</a>
             <a class="footer-item faqs" href="#">FAQS</a>
           </div>
         </div>

@@ -2232,26 +2232,43 @@ html {
   display: none;
 }
 
+.mdc-banner {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  grid-template-rows: 50px;
+  background-color: #07103f;
+  border-bottom: 1px solid #fff;
+  position: fixed;
+  height: 75px;
+  width: 100%;
+}
+
+.mdc-banner__text {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 40%;
+  float: left;
+  color: #FAF9F6;
+}
+
+.mdc-banner__actions a {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 15px;
+  font-size: 20px;
+  color: #f5f4f2;
+  float: right;
+  text-decoration: underline;
+  -webkit-text-decoration-color: lightgray;
+          text-decoration-color: lightgray;
+  text-underline-offset: 1px;
+}
+  
 .brand-logo {
   display: block;
   width: 232.91px;
   height: 93.33px;
   margin-right: 16px;
-}
-
-.banner {
-  height: 46px;
-  background-color: #07103f;
-  color: #fff;
-  border-bottom: 1px solid #fff;
-  position: fixed;
-  width: 100%;
-  opacity: 97%;
-}
-
-.banner a {
-  text-decoration: underline;
-  color: #fff;
 }
 
 .hero-container {
