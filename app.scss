@@ -48,8 +48,8 @@
 
 * {
   // Toggle Comment border stye & color (on/off) to see layout border.
-  // border-style: solid;
-  // border-color: #c22b10;
+  /* border-style: solid;
+  border-color: #c22b10; */
 
   text-decoration: none;
   box-sizing: border-box;
@@ -140,14 +140,117 @@ html {
   @include button.filled-accessible(white);
 }
 
-.footer {
+
+/* New Example*/
+
+
+
+
+
+/* Old Example */
+.landing-page-section-footer{
+  /* border: 2px solid magenta; */
+ /*  display: grid;
+  grid-template-columns: 6fr 6fr;
+  grid-template-rows: 100px; */
   background-color: #000;
-  color: #fff;
+  height: fit-content;
+  margin-bottom: 0px;
 }
 
-.footer-item {
-  color: #000;
-  margin-bottom: 1rem;
-  margin-right: 2.5rem;
+/* .footer-nav-links {
+  display: block;
+} */
+
+/* .footer-item {
+  /* border: 2px solid lightgreen; 
+  color: #fff;
+  margin-bottom: 1.5rem;
+  margin-right: 2.5rem; 
   font-size: 0.875em;
+} */
+
+.footer-items {
+  border: 2px dashed red; 
+  height: 100px;
+  width: 200px 
+}  
+
+.footer-logo img{
+  /* border: 1px solid red; */
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 50px;
+  width: 150px;
+  height: 150px;
+}
+
+.footer-about {
+  border: 1px solid greenyellow;
+  /* position: absolute; */
+  /* width: min-content; */
+  margin-left: 250px;
+  margin-top: 100px;
+  /* position: absolute; */
+  color: #FAF9F6;
+  text-align: center; 
+  font-size: 25px;
+  display: inline-block;
+  position: relative;
+}
+
+ul > li {
+  list-style: none;
+  display: inline; 
+} 
+
+
+.social-menu{
+  border: 1px dotted limegreen; 
+  font-size: 35px;
+  /*margin-bottom: 0px */
+  margin-top: 50px; 
+  /* margin-right: 0px; */
+  margin-left: 50%; 
+  padding-right: 50px;
+  position: absolute;
+  
+  
+}
+
+/* Social Colors */
+
+.social-menu li a {
+  color: #E5E4E2;
+  margin-left: 15px;
+}
+
+.fa-discord:hover {
+  color: #5865F2;
+  transition: ease-in 0.1s;
+}
+
+.fa-facebook:hover {
+  color: #1877f2;
+  transition: ease-in 0.1s;
+}
+
+.fa-twitter:hover {
+  color: #1da1f2;
+  transition: ease-in 0.1s;
+}
+
+.fa-instagram:hover {
+  background: linear-gradient(45deg, 
+                      #f09433 0%,
+                      #e6683c 25%,
+                      #dc2743 50%,
+                      #cc2366 75%,
+                      #bc1888 100%);
+  transition: ease-in 0.1s;
+  border-radius: 5px;
+}
+
+.landing-page-section-footer {
+  border: 1px dashed magenta;
 }

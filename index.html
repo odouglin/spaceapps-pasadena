@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
     <!-- Meta Description for SEO -->
     <meta name="description" content="Website for NASA Space Apps Pasadena">
     <title>NASA Space Apps Pasadena 2021 Website</title>
@@ -179,14 +180,44 @@
       <!-- TODO: Fix responsive text -->
       <!-- Footer -->
       <!-- Add footer elements -->
-      <section class="landing-page-section footer">
+      
+        
+      <section class="landing-page-section-footer">
         <div class="mdc-layout-grid">
-          <div class="footer-items">
-            <div class="footer-item footer-item-logo-2021"></div>
-            <a class="footer-item discord" href="https://discord.gg/XTwnNFyNZv" target="_blank">Discord</a>
-            <a class="footer-item faqs" href="#">FAQS</a>
-          </div>
+         <div class="mdc-layout-grid__inner">
+        <div class="
+          mdc-layout-grid__cell
+          mdc-layout-grid__cell--span-2-phone
+          mdc-layout-grid__cell--span-4-tablet
+          mdc-layout-grid__cell--span-6-desktop
+          mdc-layout-grid__cell--span-6-desktop-hd
+          mdc-layout-grid__cell--align-right
+        ">
+        <div class="footer-logo">
+          <img src="/space-apps-logo-white.png" />
         </div>
+        <div class="footer-about">Space Apps Pasadena is.....</div> 
+        
+        </div>
+        <div class="
+          mdc-layout-grid__cell
+          mdc-layout-grid__cell--span-4-phone
+          mdc-layout-grid__cell--span-8-tablet
+          mdc-layout-grid__cell--span-8-desktop
+          mdc-layout-grid__cell--span-8-desktop-hd
+          mdc-layout-grid__cell--align-right"
+        >   
+        <div class="footer-items"> 
+          <ul class="social-menu">
+            <li><a href="#" target="_blank"><i class="fab fa-discord"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          </ul>       
+        </div>
+        </div>
+      </div> <!-- mdc layout grid __inner div -->
+      </div> <!-- mdc layout grid div --> 
       </section>
     </main>
 
@@ -194,3 +225,13 @@
     <script src="./dist/bundle.js" async></script>
   </body>
 </html>
+
+
+<!-- <a class="footer-item discord" href="https://discord.gg/XTwnNFyNZv" target="_blank">Discord</a>
+            <a class="footer-item faqs" href="#">FAQS</a>
+          </div> -->
+          <!-- <div class="mdc-layout-grid">
+          </div> --> 
+
+
+<!-- Old mdc grids -->
